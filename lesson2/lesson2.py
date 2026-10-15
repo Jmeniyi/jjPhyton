@@ -10,7 +10,7 @@ numberTwo= int(input("второе число"))
 
 summ = numberOne + numberTwo
 
-total = numberOne + numberTwo
+
 
 year = int(2026)
 
