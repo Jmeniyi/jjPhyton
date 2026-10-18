@@ -29,9 +29,7 @@ while True:
     elif c == 4:
         print(a*b)
         print(layer)
-    else:
-        print("Нет такого пункта")
-        print(layer)
+        
 
 
 
