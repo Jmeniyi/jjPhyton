@@ -10,8 +10,9 @@ def get_number(prompt):
 age = get_number("Введите число: ")
 print(f"Ваше число: {age}")
 
-try:
-    my_list = [1, 2, 3]; 
+
+my_list = [1, 2, 3];
+try: 
     print(my_list[5])
-except IndexError:
-   print("Такого значения нет в списке")
+except IndexError as error:
+    print(f"Такого значения нет в списке {error}")

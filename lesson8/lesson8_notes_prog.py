@@ -1,5 +1,5 @@
 stop_word = "стоп"
-lis1= [""]
+lis1= []
 try:
     with open("words.txt","w", encoding="utf-8") as file:
         while True: 
