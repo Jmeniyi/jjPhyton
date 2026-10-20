@@ -1,9 +1,6 @@
 print("===--Калькулятор-V3--===")
+import calculator_v3_tool as history
 layer = "_" * 50
-
-def save_to_history(text):
-    with open("story_Calculator.txt", "a", encoding="utf-8") as file:
-        file.write(text)
 
 while True:
     try:
@@ -36,24 +33,24 @@ while True:
         if c == 1:
             summ = a+b
             print(summ)
-            save_to_history(f"{a} + {b} = {summ}\n")
+            history.save_to_history(f"{a} + {b} = {summ}\n")
             print(layer)
 
         elif c == 2:
             difference = a-b
             print(a-b)
-            save_to_history(f"{a} - {b} = {difference}\n")
+            history.save_to_history(f"{a} - {b} = {difference}\n")
             print(layer)
 
         elif c == 3:
             divide = a/b
             print(a/b)
-            save_to_history(f"{a} / {b} = {divide}\n")
+            history.save_to_history(f"{a} / {b} = {divide}\n")
             print(layer)
         elif c == 4:
             multyply = a*b
             print(a*b)
-            save_to_history(f"{a} * {b} = {multyply}\n")
+            history.save_to_history(f"{a} * {b} = {multyply}\n")
             print(layer)
         elif c == 0:
             print("Выход")
